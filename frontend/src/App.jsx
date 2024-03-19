@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes } from "react-router-dom";
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import { Events, Contact, Home, Profiles } from "./components/pages";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/profiles" element={<Profiles />} />
         </Routes>
+        <Footer/>
       </div>
   );
 }
