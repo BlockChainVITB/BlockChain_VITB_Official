@@ -74,7 +74,7 @@
   font-weight: bolder;
   font-size: 14px;
   border-radius: 25px;
-  background: orangered;
+  background-image: linear-gradient(72deg, #FFFF00, #FB6D48);
   padding: 20px, 40px, 21px, 40px;
   width: 100px;
   height: 40px;
@@ -84,7 +84,7 @@
 }
 
 .navBtn:hover {
-  color: #F57D1F;
+  color: var(--first-color);
   transition: all;
   transition-duration: 200ms;
 }

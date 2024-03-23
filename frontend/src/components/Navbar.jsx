@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { IoClose, IoMenu } from "react-icons/io5";
+
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -18,7 +19,7 @@ const Navbar = () => {
   return (
     <header className="header">
       <nav className="nav container">
-        <NavLink to="/" className="nav__logo">
+        <NavLink className="nav__logo">
           Blockchain Club
         </NavLink>
 
