@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { Events, Contact, Home, Profiles } from "./components/pages";
+import OurMotive from './components/OurMotive';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/profiles" element={<Profiles />} />
         </Routes>
+        <OurMotive />
+        
         <Footer/>
       </div>
   );
