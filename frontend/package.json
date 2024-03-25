@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "framer-motion": "^11.0.20",
+    "lucide-react": "^0.363.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
