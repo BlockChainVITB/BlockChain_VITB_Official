@@ -1,7 +1,8 @@
 import React from 'react';
-import Whatsapp from '../assets/icons8-whatsapp-48.png';
-import Linkedin from '../assets/icons8-linkedin-48.png';
-import Insta from '../assets/icons8-instagram-48.png';
+import Whatsapp from '../assets/whatsapp-logo.png';
+import Linkedin from '../assets/linkedin-logo.png';
+import Insta from '../assets/insta-logo.png';
+import logo from '../assets/BCL.ico'
 
 
 export default function Footer() {
@@ -9,8 +10,12 @@ export default function Footer() {
     <div className='bg-[hsla(0,_0%,_6%,_0.2)]'>
       <div className='flex flex-col p-16'>
         <div className='flex justify-between items-start flex-row flex-wrap w-full text-left mb-8'>
-            <div className="w-[150px] m-4 flex justify-start flex-col text-[white]">
-                <p className='text-[12px] leading-[15px] mx-[0] my-2 cursor-pointer'>
+            <div className="w-[250px] m-4 flex justify-start flex-col text-[white]">
+                <div className="logo-div mix-blend-mode: luminosity">
+                <img src={logo} alt="Logo" className="w-16 h-16 mb-1 mix-blend-mode: luminosity"/>
+
+                </div>
+                <p className='text-[14px] leading-[17px] mx-[0] my-2 cursor-pointer'>
                     Join our WhatsApp Community and follow us on Instagram to keep up to date with our latest events and announcements.
                 </p>
             </div>
@@ -30,11 +35,11 @@ export default function Footer() {
                 </a>
             </div>
             <div className="text-[14px] leading-[17px] mb-[0.9rem]">
-                <h4 className="font-bold text-lg mb-2">Community</h4>
-                <div className="flex flex-row">
-                    <p><img src={Whatsapp} alt="" className='w-4/5' /></p>
-                    <p><img src={Insta} alt="" className='w-4/5'/></p>
-                    <p><img src={Linkedin} alt="" className='w-4/5'/></p>
+                <h4 className="font-bold text-lg mb-3 pl-5">Community</h4>
+                <div className="flex flex-row ">
+                    <p><img src={Whatsapp} alt="" className='w-16 h-16 mb-1 mix-blend-mode: luminosity' /></p>
+                    <p><img src={Insta} alt="" className='w-16 h-16 mb-1 mix-blend-mode: luminosity'/></p>
+                    <p><img src={Linkedin} alt="" className='w-16 h-16 mb-1 mix-blend-mode: luminosity'/></p>
                 </div>
             </div>
 
