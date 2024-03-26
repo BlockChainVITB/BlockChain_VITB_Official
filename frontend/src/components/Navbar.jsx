@@ -63,6 +63,8 @@ const Navbar = () => {
         <div className="text-2xl text-title cursor-pointer lg:hidden" id="nav-toggle" onClick={toggleMenu}>
           <IoMenu />
         </div>
+        <button className="text-black px-4 p-2 font-[500] text-[14px] rounded-full self-center hover:font-bold transition-all duration-200   bg-gradient-to-r from-BASE_YELLOW to-orange">Join Us</button>
+
       </nav>
     </header>
   );
