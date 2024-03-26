@@ -1,14 +1,14 @@
-import React from 'react';
 import { Route, Routes } from "react-router-dom";
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import HeroSection from './components/pages/HeroSection';
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import HeroSection from "./components/pages/HeroSection";
 import { Events, Contact, Home, Profiles } from "./components/pages";
-import OurMotive from './components/OurMotive';
+import OurMotive from "./components/OurMotive";
+import RecentEvents from "./components/RecentEvents";
 
 function App() {
   return (
-    <div className='App'>
+    <div className="App">
       <Navbar />
       <HeroSection />
       <Routes>
@@ -18,6 +18,7 @@ function App() {
         <Route path="/profiles" element={<Profiles />} />
       </Routes>
       <OurMotive />
+      <RecentEvents />
 
       <Footer />
     </div>
