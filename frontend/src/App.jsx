@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import HeroSection from './components/pages/HeroSection';
 import { Events, Contact, Home, Profiles } from "./components/pages";
 import OurMotive from './components/OurMotive';
+import TeamDetails from './components/TeamDetails';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Route path="/profiles" element={<Profiles />} />
       </Routes>
       <OurMotive />
-
+      <TeamDetails/>
       <Footer />
     </div>
   );
