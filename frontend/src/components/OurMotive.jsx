@@ -34,8 +34,8 @@ const OurMotive = () => {
     return (
         <div>
             <div className="container mx-auto px-4 py-8">
-                <div className="text-center mb-8" style={{ color: '#FFFF00' }}>
-                    <h1 className="text-4xl font-bold">Our Motive!</h1>
+                <div className="text-center mb-8">
+                    <h1 className="bg-clip-text text-transparent bg-gradient-to-t from-[#FFF50A] to-[#FF9900] font-bold text-3xl my-12 ">Our Motive</h1>
                 </div>
                 <div id="container" style={containerStyles}>
                     <div id='Empowerment' className='md:col-start-2 md:row-start-1 md:col-end-3 md:row-end-2'>

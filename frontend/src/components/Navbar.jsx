@@ -19,7 +19,7 @@ const Navbar = () => {
     <header className="w-full top-0 left-0 bg-transparent z-50">
       <nav className="flex items-center justify-between relative h-16 m-4">
         <NavLink to="/" className="text-primary transition-colors duration-400 text-2xl font-secondary">
-          Blockchain Club
+          <img src='logo-transparent.png' className="w-200 h-20" alt="Logo" />
         </NavLink>
 
         <div className={`flex flex-col space-y-10 lg:flex-row lg:space-x-10 lg:space-y-0 ${showMenu ? "right-0" : "-right-full"} fixed lg:static top-0 bg-black bg-opacity-20 backdrop-blur-md w-4/5 lg:w-auto h-full lg:h-auto pt-24 lg:pt-0 transition-right duration-400`}
