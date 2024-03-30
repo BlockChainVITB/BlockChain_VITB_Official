@@ -66,7 +66,7 @@ function RecentEvents() {
 
   return (
     <div className=" flex flex-col justify-center items-center">
-      <h1 className=" bg-clip-text text-transparent bg-gradient-to-t from-[#FFF50A] to-[#FF9900] font-bold text-3xl my-12">
+      <h1 className=" bg-clip-text text-transparent bg-gradient-to-t from-[#FFF50A] to-[#FF9900] font-bold text-5xl my-12">
         Recent Events
       </h1>
       <div className="bg-gradient-to-b from-[#FFF50A] to-[#FF9900] w-[50%] rounded-3xl flex items-center justify-center relative">

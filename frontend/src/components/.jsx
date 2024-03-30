@@ -46,7 +46,7 @@ const Navbar = () => {
   return (
     <header className="w-full top-0 left-0 bg-transparent z-50">
       <nav className="flex items-center justify-between relative h-20 m-0 w-5/6 mx-auto">
-        <NavLink to="/" className="text-primary transition-colors duration-400 text-4xl font-weight-800 font-secondary flex gap-2 items-center	">
+        <NavLink to="/" className="text-primary transition-colors duration-400 text-2xl font-secondary flex gap-2 items-center	">
           {/* <img src={logo} alt="Logo" className="w-16 h-16 mb-1 rounded-full mix-blend-luminosity"/> */}
           <Lottie options={NavbarAnimationOptions} height={100} width={100}/>
           <h2>Blockchain Club</h2>
@@ -56,13 +56,13 @@ const Navbar = () => {
           id="nav-menu">
           <ul className="space-y-10 lg:space-y-0 lg:flex lg:items-center lg:space-x-10">
             <li>
-              <NavLink to="#home" className="text-title font-semibold transition-colors duration-400 hover:underline hover:underline-offset-4 hover:text-orange" onClick={closeMenuOnMobile}>
+              <NavLink to="#home" className="text-title font-semibold transition-colors duration-400 hover:underline hover:text-orange" onClick={closeMenuOnMobile}>
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink to="#profiles" className={`text-title font-semibold transition-colors duration-400 hover:underline hover:underline-offset-4 hover:text-orange`}
-              
+              <NavLink to="#profiles" className={`text-title font-semibold transition-colors duration-400 `}
+              style={containerStyles}
               onClick={closeMenuOnMobile}>
                 About Us
               </NavLink>
@@ -70,14 +70,14 @@ const Navbar = () => {
 
             </li>
             <li>
-              <NavLink to="/#events" className="text-title font-semibold transition-colors duration-400 hover:underline hover:underline-offset-4 hover:text-orange" onClick={closeMenuOnMobile}>
+              <NavLink to="/#events" className="text-title font-semibold transition-colors duration-400 hover:underline hover:text-orange" onClick={closeMenuOnMobile}>
                 Events
               </NavLink>
             </li>
             <li>
               <NavLink
                 to="/"
-                className="text-title font-semibold transition-colors duration-400 hover:underline hover:underline-offset-4 hover:text-orange"
+                className="text-title font-semibold transition-colors duration-400 hover:underline hover:text-orange"
                 onClick={closeMenuOnMobile}
               >
                 Timeline
@@ -86,7 +86,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/profiles"
-                className="text-title font-semibold transition-colors duration-400 hover:underline hover:underline-offset-4 hover:text-orange"
+                className="text-title font-semibold transition-colors duration-400 hover:underline hover:text-orange"
                 onClick={closeMenuOnMobile}
               >
                 Contact Us

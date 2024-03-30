@@ -10,6 +10,9 @@ export default {
         'BASE_YELLOW': '#FFFF00',
         'orange': '#FB6D48',
       },
+      height: {
+        'lscreen': '80vh',
+      }
     },
   },
   plugins: [],
