@@ -14,7 +14,7 @@ const TeamDetails = () => {
 
     return (
         <div className="relative w-full overflow-hidden mt-6">
-             <h1 className=" bg-clip-text text-transparent bg-gradient-to-t from-[#FFF50A] to-[#FF9900] font-bold text-3xl my-12 text-center">
+             <h1 className=" bg-clip-text text-transparent bg-gradient-to-t from-[#FFF50A] to-[#FF9900] font-bold text-5xl my-12 text-center">
                     Team Members
             </h1>
             {/* Wrapping div for seamless looping */}

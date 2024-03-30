@@ -2,7 +2,7 @@ import React from 'react';
 import Lottie from 'react-lottie';
 import InnovationAnimationData from '../assets/InnovationAnimationData.json'; 
 import ImpactAnimationData from '../assets/ImpactAnimationData.json';
-
+import EmpowermentAnimationData from '../assets/EmpowermentAnimationData.json';
 
 const OurMotive = () => {
 
@@ -14,7 +14,6 @@ const OurMotive = () => {
           preserveAspectRatio: 'xMidYMid slice'
         }
     };
-
     const ImpactAnimationOptions = {
         loop: true, 
         autoplay: true, 
@@ -23,7 +22,17 @@ const OurMotive = () => {
           preserveAspectRatio: 'xMidYMid slice'
         }
     };
+    const EmpowermentAnimationOptions = {
+        loop: true, 
+        autoplay: true, 
+        animationData: EmpowermentAnimationData , 
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid slice'
+        }
+    };
 
+
+    
     const containerStyles = {
         display: 'grid',
         gridTemplateRows: 'repeat(3, 1fr)',
@@ -34,10 +43,13 @@ const OurMotive = () => {
     return (
         <div>
             <div className="container mx-auto px-4 py-8">
-                <div className="text-center mb-8">
-                    <h1 className="bg-clip-text text-transparent bg-gradient-to-t from-[#FFF50A] to-[#FF9900] font-bold text-3xl my-12 ">Our Motive</h1>
+            <div className="text-center mb-8">
++                    <h1 className="bg-clip-text text-transparent bg-gradient-to-t from-[#FFF50A] to-[#FF9900] font-bold text-5xl my-12 ">Our Motive</h1>
                 </div>
                 <div id="container" style={containerStyles}>
+                    <div id='empowerment-animation' className='md:col-start-1 md:row-start-1 md:col-end-2 md:row-end-2 m-auto222'>
+                        <Lottie options={EmpowermentAnimationOptions} height={300} width={300} />
+                    </div>
                     <div id='Empowerment' className='md:col-start-2 md:row-start-1 md:col-end-3 md:row-end-2'>
                         <div className="text-lg font-bold mb-2 text-yellow-700">01.</div>
                         <h2 className="text-xl font-bold mb-2 ">Empowerment</h2>   
