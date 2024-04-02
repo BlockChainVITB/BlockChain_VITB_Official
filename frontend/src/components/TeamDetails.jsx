@@ -13,13 +13,14 @@ const TeamDetails = () => {
     const duplicatedSlides = [...slides, ...slides];
 
     return (
-        <div className="relative w-full overflow-hidden mt-6">
+        <div id='team' className="relative w-full overflow-hidden mt-6">
              <h1 className=" bg-clip-text text-transparent bg-gradient-to-t from-[#FFF50A] to-[#FF9900] font-bold text-5xl my-12 text-center">
-                    Team Members
+                Team Members
             </h1>
             {/* Wrapping div for seamless looping */}
+            <div className='w-full inline-flex flex-nowrap'>
             <motion.div
-                className="flex"
+                className="flex items-center justify-center"
                 animate={{
                     x: ['-100%', '0%'],
                     transition: {
@@ -31,22 +32,24 @@ const TeamDetails = () => {
             >
                 {/* Render duplicated slides */}
                 {duplicatedSlides.map((slide, index) => (
-                    <div key={index} className="flex-shrink-0" style={{ width: `${100 / slides.length}%` }} >{/* Add mr- for margin */}
-                        <div className="flex-shrink-0">
-                        <div className="auto-fit-[120px] grid gap-6 p-6">
-                                 <div className="rounded-lg bg-white p-4 text-center shadow-md"> {/* Responsive padding */}
+                    <div key={index} className="flex-shrink-0" style={{ width: `${100 / slides.length}%` }}>
+                       
+                            <div className="auto-fit flex gap-10 p-10">
+                                <div className="rounded-lg bg-white p-4 text-center shadow-md">
                                     <img className="mx-auto mb-4 h-24 w-24 rounded-full" src={slide.photo} alt={slide.name} />
                                     <h2 className="text-xl font-semibold">{slide.name}</h2>
                                     <p className="text-sm text-gray-600">{slide.position}</p>
                                 </div>
-                            </div>
+                          
                         </div>
                     </div>
                 ))}
             </motion.div>
+            
+            </div>
         </div>
     );
 };
 
-
+        
 export default TeamDetails;

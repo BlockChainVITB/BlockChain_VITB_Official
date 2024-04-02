@@ -6,19 +6,19 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 // Event Details
 const EventDetails = [
   {
-    image: "https://source.unsplash.com/random/300x300",
+    image: "https://source.unsplash.com/random",
     title: "Event 1",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?",
   },
   {
-    image: "https://source.unsplash.com/random/300x300",
+    image: "https://source.unsplash.com/random",
     title: "Event 2",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?",
   },
   {
-    image: "https://source.unsplash.com/random/300x300",
+    image: "https://source.unsplash.com/random",
     title: "Event 3",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?",
@@ -37,17 +37,17 @@ function EventCard({ EventData }) {
       style={{ maxWidth: "300px" }}
     >
       <img
-        src={EventData.image}
-        alt={EventData.title}
-        className="w-full h-auto rounded-xl object-cover"
-        style={{ maxWidth: "100%" }}
+      src={EventData.image}
+      alt={EventData.title}
+      className="w-full h-auto rounded-xl object-cover"
+      style={{ maxWidth: "100%", }}
       />
       <div className="p-4 text-center">
-        <h1 className="text-lg font-semibold text-white ">{EventData.title}</h1>
-        <p className="my-3 text-sm text-slate-800">{EventData.description}</p>
+      <h1 className="text-lg font-semibold text-white ">{EventData.title}</h1>
+      <p className="my-3 text-sm text-slate-800">{EventData.description}</p>
       </div>
     </motion.div>
-  );
+  )
 }
 
 // Main Component
@@ -65,11 +65,11 @@ function RecentEvents() {
   };
 
   return (
-    <div className=" flex flex-col justify-center items-center">
-      <h1 className=" bg-clip-text text-transparent bg-gradient-to-t from-[#FFF50A] to-[#FF9900] font-bold text-5xl my-12">
+    <div id='events' className=" flex flex-col justify-center items-center">
+      <h1 className=" bg-clip-text text-transparent bg-gradient-to-t from-[#FFF50A] to-[#FF9900] font-bold text-5xl my-12 text-center">
         Recent Events
       </h1>
-      <div className="bg-gradient-to-b from-[#FFF50A] to-[#FF9900] w-[50%] rounded-3xl flex items-center justify-center relative">
+      <div className="bg-gradient-to-b from-[#FFF50A] to-[#FF9900] w-[75%] rounded-3xl flex items-center justify-center relative">
         <button
           type="button"
           className="md:absolute left-0 top-1/2 transform -translate-y-1/2 bg-transparent rounded-full p-2  md:block"
