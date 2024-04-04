@@ -41,10 +41,13 @@ const OurMotive = () => {
     };
 
     return (
-        <div>
+        <div
+        id='motive'
+        className=''
+        >
             <div className="container mx-auto px-4 py-8">
             <div className="text-center mb-8">
-+                    <h1 className="bg-clip-text text-transparent bg-gradient-to-t from-[#FFF50A] to-[#FF9900] font-bold text-5xl my-12 ">Our Motive</h1>
+                 <h1 className="bg-clip-text text-transparent bg-gradient-to-t from-[#FFF50A] to-[#FF9900] font-bold text-5xl my-12 ">Our Motive</h1>
                 </div>
                 <div id="container" style={containerStyles}>
                     <div id='empowerment-animation' className='md:col-start-1 md:row-start-1 md:col-end-2 md:row-end-2 m-auto222'>

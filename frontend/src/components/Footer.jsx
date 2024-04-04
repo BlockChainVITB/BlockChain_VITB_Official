@@ -7,7 +7,10 @@ import logo from '../assets/BCL.ico'
 
 export default function Footer() {
   return (
-    <div className='bg-[hsla(0,_0%,_6%,_0.2)]'>
+    <div 
+    id='footer'
+    className='bg-[hsla(0,_0%,_6%,_0.2)]'
+    >
       <div className='flex flex-col p-16'>
         <div className='flex justify-between items-start flex-row flex-wrap w-full text-left mb-8'>
             <div className="w-[250px] m-4 flex justify-start flex-col text-[white]">

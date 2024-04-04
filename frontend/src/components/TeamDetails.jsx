@@ -13,7 +13,10 @@ const TeamDetails = () => {
     const duplicatedSlides = [...slides, ...slides];
 
     return (
-        <div className="relative w-full overflow-hidden mt-6">
+        <div 
+        id='profiles'
+        className="w-full overflow-hidden mt-6 h-[80vh]"
+        >
              <h1 className=" bg-clip-text text-transparent bg-gradient-to-t from-[#FFF50A] to-[#FF9900] font-bold text-5xl my-12 text-center">
                     Team Members
             </h1>
@@ -24,7 +27,7 @@ const TeamDetails = () => {
                     x: ['-100%', '0%'],
                     transition: {
                         ease: 'linear',
-                        duration: 15, // Increase the duration value to slow down the animation
+                        duration: 45, // Increase the duration value to slow down the animation
                         repeat: Infinity,
                     },
                 }}

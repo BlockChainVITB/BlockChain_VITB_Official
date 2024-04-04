@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import { IoClose, IoMenu } from "react-icons/io5";
 import logo from '../assets/BCL.ico'
 import Lottie from 'react-lottie';
 import NavbarAnimationData from '../assets/NavAnimationData.json';
+import { HashLink as NavLink } from 'react-router-hash-link';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -44,7 +45,7 @@ const Navbar = () => {
   }
 
   return (
-    <header className="w-full top-0 left-0 bg-transparent z-50">
+    <header className="w-full top-0 left-0  z-50">
       <nav className="flex items-center justify-between relative h-20 m-0 w-5/6 mx-auto">
         <NavLink to="/" className="text-primary transition-colors duration-400 text-4xl font-weight-800 font-secondary flex gap-2 items-center	">
           {/* <img src={logo} alt="Logo" className="w-16 h-16 mb-1 rounded-full mix-blend-luminosity"/> */}
@@ -52,16 +53,16 @@ const Navbar = () => {
           <h2>Blockchain Club</h2>
         </NavLink>
 
-        <div className={`flex flex-col space-y-10 lg:flex-row lg:space-x-10 lg:space-y-0 ${showMenu ? "right-0" : "-right-full"} fixed lg:static top-0 bg-black-300 z-10  w-4/5 lg:w-auto h-full lg:h-auto pt-24 lg:pt-0 transition-right duration-400`}
+        <div className={`flex flex-col space-y-10 lg:flex-row lg:space-x-10 bg-black-300 lg:space-y-0 ${showMenu ? "right-0 bg-neutral-900" : "-right-full"}  bg-grey-900 fixed lg:static  top-0  z-10  w-4/5 lg:w-auto p-10 rounded-xl lg:p-0 lg:h-auto pt-24 lg:pt-0 transition-right duration-500 `}
           id="nav-menu">
-          <ul className="space-y-10 lg:space-y-0 lg:flex lg:items-center lg:space-x-10">
-            <li>
-              <NavLink to="#home" className="text-title font-semibold transition-colors duration-400 hover:underline hover:underline-offset-4 hover:text-orange" onClick={closeMenuOnMobile}>
+          <ul className="space-y-10 lg:space-y-0  lg:flex lg:items-center lg:space-x-10 ">
+            <li className="text-center">
+              <NavLink smooth to="#home" className="text-title font-semibold transition-colors duration-400 hover:underline hover:underline-offset-4 hover:text-orange " onClick={closeMenuOnMobile}>
                 Home
               </NavLink>
             </li>
-            <li>
-              <NavLink to="#profiles" className={`text-title font-semibold transition-colors duration-400 hover:underline hover:underline-offset-4 hover:text-orange`}
+            <li className="text-center">
+              <NavLink smooth to="#motive" className={`text-title font-semibold transition-colors duration-400 hover:underline hover:underline-offset-4 hover:text-orange`}
               
               onClick={closeMenuOnMobile}>
                 About Us
@@ -69,23 +70,23 @@ const Navbar = () => {
               {/* <span className="absolute inset-x-0 bottom-0 h-1 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span> */}
 
             </li>
-            <li>
-              <NavLink to="/#events" className="text-title font-semibold transition-colors duration-400 hover:underline hover:underline-offset-4 hover:text-orange" onClick={closeMenuOnMobile}>
+            <li className="text-center">
+              <NavLink smooth to="/#events" className="text-title font-semibold transition-colors duration-400 hover:underline hover:underline-offset-4 hover:text-orange" onClick={closeMenuOnMobile}>
                 Events
               </NavLink>
             </li>
-            <li>
+            <li className="text-center">
               <NavLink
-                to="/"
+                smooth to="/#profiles"
                 className="text-title font-semibold transition-colors duration-400 hover:underline hover:underline-offset-4 hover:text-orange"
                 onClick={closeMenuOnMobile}
               >
-                Timeline
+                Profiles
               </NavLink>
             </li>
-            <li>
+            <li className="text-center">
               <NavLink
-                to="/profiles"
+                smooth to="/#footer"
                 className="text-title font-semibold transition-colors duration-400 hover:underline hover:underline-offset-4 hover:text-orange"
                 onClick={closeMenuOnMobile}
               >
@@ -94,12 +95,12 @@ const Navbar = () => {
             </li>
 
           </ul>
-          <div className="absolute top-4 right-6 text-2xl text-title cursor-pointer lg:hidden" id="nav-close" onClick={toggleMenu}>
+          <div className="absolute top-4 right-6 text-3xl hover:text-zinc-200 text-title cursor-pointer lg:hidden" id="nav-close" onClick={toggleMenu}>
             <IoClose />
           </div>
         </div>
 
-        <div className="text-2xl text-title cursor-pointer lg:hidden" id="nav-toggle" onClick={toggleMenu}>
+        <div className="text-3xl text-title hover:text-4xl hover:text-zinc-200 duration-100	data-twe-attribute.	cursor-pointer lg:hidden" id="nav-toggle" onClick={toggleMenu}>
           <IoMenu />
         </div>
 

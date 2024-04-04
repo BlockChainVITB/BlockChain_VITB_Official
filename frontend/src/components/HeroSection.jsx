@@ -1,11 +1,14 @@
 // import './HeroSection.css';
 function HeroSection() {
     return (
-        <div className="w-[80%]  top-8 left-0 bg-transparent mx-auto h-lscreen">
+        <div 
+        id="home"
+        className="w-[80%]  top-8 left-0 bg-transparent mx-auto h-lscreen"
+        >
             <div className="flex flex-col justify-center gap-[20px] w-[60%] top-[60px] h-full">
                 <div className=" text-6xl text-white font-extrabold">Empowering Innovation, Uniting Mind</div>
 
-                <div className="w-[50%] font-normal text-xl">
+                <div className="w-[50%] font-bold text-xl">
                     Welcome To Blockchain Club VIT Bhopal.
                 </div>
 
