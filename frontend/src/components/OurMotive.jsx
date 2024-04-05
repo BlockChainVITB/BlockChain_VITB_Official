@@ -41,7 +41,7 @@ const OurMotive = () => {
     };
 
     return (
-        <div>
+        <div id='about'>
             <div className="container mx-auto px-4 py-8">
             <div className="text-center mb-8">
 +                    <h1 className="bg-clip-text text-transparent bg-gradient-to-t from-[#FFF50A] to-[#FF9900] font-bold text-5xl my-12 ">Our Motive</h1>

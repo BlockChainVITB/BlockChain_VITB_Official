@@ -4,6 +4,7 @@ import { IoClose, IoMenu } from "react-icons/io5";
 import logo from '../assets/BCL.ico'
 import Lottie from 'react-lottie';
 import NavbarAnimationData from '../assets/NavAnimationData.json';
+import {HashLink as Link} from 'react-router-hash-link';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -46,51 +47,51 @@ const Navbar = () => {
   return (
     <header className="w-full top-0 left-0 bg-transparent z-50">
       <nav className="flex items-center justify-between relative h-20 m-0 w-5/6 mx-auto">
-        <NavLink to="/" className="text-primary transition-colors duration-400 text-4xl font-weight-800 font-secondary flex gap-2 items-center	">
+        <NavLink to="/" className="text-primary transition-colors duration-400 text-4xl font-weight-800 font-secondary flex gap-2 items-center">
           {/* <img src={logo} alt="Logo" className="w-16 h-16 mb-1 rounded-full mix-blend-luminosity"/> */}
-          <Lottie options={NavbarAnimationOptions} height={100} width={100}/>
-          <h2>Blockchain Club</h2>
+          <Lottie options={NavbarAnimationOptions} height={100} width={100} />
+          <p className="md: text-2xl lg: text-lg">Blockchain Club</p>
         </NavLink>
 
         <div className={`flex flex-col space-y-10 lg:flex-row lg:space-x-10 lg:space-y-0 ${showMenu ? "right-0" : "-right-full"} fixed lg:static top-0 bg-black-300 z-10  w-4/5 lg:w-auto h-full lg:h-auto pt-24 lg:pt-0 transition-right duration-400`}
           id="nav-menu">
           <ul className="space-y-10 lg:space-y-0 lg:flex lg:items-center lg:space-x-10">
             <li>
-              <NavLink to="#home" className="text-title font-semibold transition-colors duration-400 hover:underline hover:underline-offset-4 hover:text-orange" onClick={closeMenuOnMobile}>
+              <Link smooth to="/#home" className="text-title font-semibold transition-colors duration-400 hover:underline hover:underline-offset-4 hover:text-orange" onClick={closeMenuOnMobile}>
                 Home
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink to="#profiles" className={`text-title font-semibold transition-colors duration-400 hover:underline hover:underline-offset-4 hover:text-orange`}
+              <Link smooth to="/#about" className={`text-title font-semibold transition-colors duration-400 hover:underline hover:underline-offset-4 hover:text-orange`}
               
               onClick={closeMenuOnMobile}>
                 About Us
-              </NavLink>
+              </Link>
               {/* <span className="absolute inset-x-0 bottom-0 h-1 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span> */}
 
             </li>
             <li>
-              <NavLink to="/#events" className="text-title font-semibold transition-colors duration-400 hover:underline hover:underline-offset-4 hover:text-orange" onClick={closeMenuOnMobile}>
+              <Link smooth to="/#events" className="text-title font-semibold transition-colors duration-400 hover:underline hover:underline-offset-4 hover:text-orange" onClick={closeMenuOnMobile}>
                 Events
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink
-                to="/"
+              <Link
+                smooth to="/#team"
                 className="text-title font-semibold transition-colors duration-400 hover:underline hover:underline-offset-4 hover:text-orange"
                 onClick={closeMenuOnMobile}
               >
-                Timeline
-              </NavLink>
+                Team
+              </Link>
             </li>
             <li>
-              <NavLink
-                to="/profiles"
+              <Link
+                to=""
                 className="text-title font-semibold transition-colors duration-400 hover:underline hover:underline-offset-4 hover:text-orange"
                 onClick={closeMenuOnMobile}
               >
                 Contact Us
-              </NavLink>
+              </Link>
             </li>
 
           </ul>
