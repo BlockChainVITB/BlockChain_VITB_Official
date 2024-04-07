@@ -7,12 +7,15 @@ import logo from '../assets/BCL.ico'
 
 export default function Footer() {
   return (
-    <div className='bg-[hsla(0,_0%,_6%,_0.2)]'>
+    <div 
+    id='footer'
+    className='bg-[hsla(0,_0%,_6%,_0.2)]'
+    >
       <div className='flex flex-col p-16'>
         <div className='flex justify-between items-start flex-row flex-wrap w-full text-left mb-8'>
             <div className="w-[250px] m-4 flex justify-start flex-col text-[white]">
-                <div className="logo-div mix-blend-mode: luminosity">
-                <img src={logo} alt="Logo" className="w-16 h-16 mb-1 mix-blend-mode: luminosity"/>
+                <div className="logo-div mix-blend-mode: luminosity ">
+                <img src={logo} alt="Logo" className="w-16 h-16 mb-1 mix-blend-mode: luminosity rounded-[100%]"/>
 
                 </div>
                 <p className='text-[14px] leading-[17px] mx-[0] my-2 cursor-pointer'>
@@ -20,7 +23,7 @@ export default function Footer() {
                 </p>
             </div>
             <div className='w-[150px] m-4 flex justify-start flex-col text-[white]'>
-                <h4>Quick Links</h4>
+                <h4 className='font-bold text-lg mb-3 pl-5'>Quick Links</h4>
                 <a href="/About">
                     <p>About</p>
                 </a>
